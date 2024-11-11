@@ -1,0 +1,12 @@
+SET SERVEROUTPUT ON;
+
+DECLARE
+  i NUMBER := 0;
+BEGIN
+  LOOP
+    EXIT WHEN i > 50;
+    DBMS_OUTPUT.PUT_LINE(i);
+    i := i + 5;
+  END LOOP;
+END;
+/
