@@ -13,5 +13,5 @@
    Create a new file with the `.sql` extension (e.g., `hello.sql`).
 
 5. **Run the SQL File**  
-   To execute your SQL file, run it in the terminal using the prefix `@`:
+   To execute your SQL file, run it in the terminal using the prefix `@`
     e.g for the file above we'll run: `@hello.sql`
