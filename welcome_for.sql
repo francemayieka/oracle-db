@@ -4,6 +4,7 @@ SET VERIFY OFF;
 DECLARE
   name VARCHAR2(50);
   age NUMBER;
+  i NUMBER;
 BEGIN
   name := '&name';
   age := &age;

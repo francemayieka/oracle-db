@@ -4,15 +4,16 @@ SET VERIFY OFF;
 DECLARE
   name VARCHAR2(50);
   age NUMBER;
-  counter NUMBER := 1;
+  counter NUMBER;
 BEGIN
+  counter := 1;
   name := '&name';
   age := &age;
 
   LOOP
+    EXIT WHEN counter > 5;
     DBMS_OUTPUT.PUT_LINE('Welcome ' || name || '! You are ' || age || ' years old.');
     counter := counter + 1;
-    EXIT WHEN counter > 5;
   END LOOP;
 END;
 /
